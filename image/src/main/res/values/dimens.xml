@@ -1,0 +1,7 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="timeline_inner_rim_width">2dp</dimen>
+    <dimen name="timeline_inner_radius">5dp</dimen>
+    <dimen name="timeline_out_rim_width">2dp</dimen>
+    <dimen name="timeline_border_width">2dp</dimen>
+</resources>

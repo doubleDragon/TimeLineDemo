@@ -293,7 +293,8 @@ public class CircleImageView2 extends ImageView {
         }
 
         mShaderMatrix.setScale(scale, scale);
-        mShaderMatrix.postTranslate((int) (dx + 0.5f) + mDrawableRect.left, (int) (dy + 0.5f) + mDrawableRect.top);
+//        mShaderMatrix.postTranslate((int) (dx + 0.5f) + mDrawableRect.left, (int) (dy + 0.5f) + mDrawableRect.top);
+        mShaderMatrix.postTranslate((int) (dx + 0.5f), (int) (dy + 0.5f));
 
         mBitmapShader.setLocalMatrix(mShaderMatrix);
     }
