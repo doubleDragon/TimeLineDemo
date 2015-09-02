@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ListView;
 
 import com.wsl.library.image.TimeLineView;
@@ -28,9 +29,11 @@ public class MainActivity extends AppCompatActivity {
             text = "this is index : " + i;
             beans.add(new Bean(text, done, last));
         }
+        View header = getLayoutInflater().inflate(R.layout.item_header, null);
         TimeLineListAdapter adapter = new TimeLineListAdapter(this);
         adapter.addAll(beans);
         ListView listView = (ListView) findViewById(R.id.list);
+        listView.addHeaderView(header);
         listView.setAdapter(adapter);
     }
 }
